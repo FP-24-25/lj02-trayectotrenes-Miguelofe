@@ -14,6 +14,10 @@ public interface TrayectoTren {
 	LocalTime getHoraSalida();
 	LocalTime getHoraLlegada();
 	Duration getDuracion();
+	LocalTime getHoraSalida(String estacion);
+	LocalTime getHoraLlegada(String estacion);
+	void anadirEstacionIntermedia(int posicion, String estacion, 
+			LocalTime horaLlegada, LocalTime horaSalida);
+	void eliminarEstacionIntermedia(String estacion);
 	
-
 }
