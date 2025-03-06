@@ -2,6 +2,7 @@ package fp.trenes;
 
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.LinkedList;
 import java.util.List;
 
 public class TrayectoTrenImpl implements TrayectoTren {
@@ -15,9 +16,9 @@ public class TrayectoTrenImpl implements TrayectoTren {
 			List<LocalTime> horasLlegada) {
 		this.codigoTren = codigoTren;
 		this.nombreTrayecto = nombreTrayecto;
-		this.estaciones = estaciones;
-		this.horasSalida = horasSalida;
-		this.horasLlegada = horasLlegada;
+		this.estaciones = new LinkedList<String>();
+		this.horasSalida = new LinkedList<LocalTime>();
+		this.horasLlegada = new LinkedList<LocalTime>();
 	}
 	//Atributos
 	
